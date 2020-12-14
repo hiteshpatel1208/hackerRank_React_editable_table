@@ -11,8 +11,15 @@ function App() {
     setList([...newList]);
   }
 
+  const handleSalarySave = (empId, newSalary) => {
+    let newList = [...list];
+    newList.filter(emp => emp.id === empId)[0].salary = newSalary;
+    setList([...newList]);
+  }
+
   return (
     <div className="App">
+      <h8k-navbar header={'Some Titile'}></h8k-navbar>
       <table>
         <thead>
           <tr>
@@ -27,7 +34,7 @@ function App() {
             list.map((emp) => {
               return (
                 <tr key={emp.id}>
-                  <Employee emp={emp} />
+                  <Employee emp={emp} saveSalary={handleSalarySave} />
                 </tr>
               );
             })

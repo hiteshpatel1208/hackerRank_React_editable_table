@@ -6,7 +6,7 @@ export default function Employee(props) {
     const [newSalary, setNewSalary] = useState(props.emp.salary);
 
     const handleSaveItem = () => {
-        props.emp.salary = newSalary;
+        props.saveSalary(props.emp.id, newSalary);
         setIsEditable(false);
         setCanSave(false);
     }
