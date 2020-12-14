@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className="App">
-      <h8k-navbar header={'Some Titile'}></h8k-navbar>
       <table>
         <thead>
           <tr>
