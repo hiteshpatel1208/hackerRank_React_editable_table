@@ -22,13 +22,13 @@ export default function AddEmployee(props) {
     return (
         <>
             <td>
-                <input type="text" placeholder="Enter Name" value={newName} onChange={(e) => setNewName(e.target.value)} />
+                <input type="text" placeholder="Enter Name" value={newName} onChange={e => setNewName(e.target.value)} />
             </td>
             <td>
-                <input type="text" placeholder="Enter Designation" value={newDes} onChange={(e) => setNewDes(e.target.value)} />
+                <input type="text" placeholder="Enter Designation" value={newDes} onChange={e => setNewDes(e.target.value)} />
             </td>
             <td>
-                <input type="text" placeholder="Enter Salary" value={newSalary} onChange={(e) => setNewSalary(e.target.value)} />
+                <input type="text" placeholder="Enter Salary" value={newSalary} onChange={e => setNewSalary(e.target.value)} />
             </td>
             <td>
                 <button type="button" onClick={() => handleAddEmployee()}>

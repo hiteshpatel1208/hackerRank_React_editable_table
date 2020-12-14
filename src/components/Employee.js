@@ -25,7 +25,7 @@ export default function Employee(props) {
             <td>{props.emp.name}</td>
             <td>{props.emp.des}</td>
             <td>
-                {isEditable ? <input type="number" value={newSalary} onChange={(e) => handlePriceChange(e.target.value)} /> : <span onClick={() => setIsEditable(true)}>$ {props.emp.salary}</span>}
+                {isEditable ? <input type="number" value={newSalary} onChange={e => handlePriceChange(e.target.value)} /> : <span onClick={() => setIsEditable(true)}>$ {props.emp.salary}</span>}
             </td>
             <td>
                 <button type="button" onClick={() => handleSaveItem()} disabled={!canSave}>
